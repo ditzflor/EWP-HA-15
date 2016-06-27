@@ -1,0 +1,29 @@
+{
+"data" : [
+    [
+      "git clone",
+      "git clone https://github.com/ditzflor/EWP-HA-15.git",
+      "Repositorium klonen"
+    ],
+    [
+      "git add",
+      "git add index.html",
+      "Änderungen lokal vornehmen, keine Zwischenspeicherung"
+    ],
+    [
+      "git commit",
+      "git commit -m 'Bla'",
+      "Änderungen lokal speichern"
+    ],
+	[
+      "git push",
+      "git push origin master",
+      "Änderungen an entferntes Repositorium übertragen"
+    ],
+	[
+      "git pull",
+      "git pull",
+      "Aktuelle Änderungen an lokale Kopie übertragen"
+	]
+  ]
+}

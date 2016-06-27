@@ -3,10 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>EWP HA 15</title>
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.css">
 </head>
 <body>
-
+	<ul>
+	<li>Zunächst wird das entsprechende Wunsch-Repositorium ins eigene Verzeichnis geforked. Mit <strong id="t1" class="tooltip" title="git clone https://github.com/ditzflor/EWP-HA-15.git">git clone</strong> wird das Verzeichnis nun auf die Festplatte gespeichert, und zwar ins momentane Arbeitsverzeichnis. Dies kann auch händisch über die Webseite erfolgen.</li>
+	<li>Mit <strong id="t2" class="tooltip" title="git add index.html">git add</strong> können nun Änderungen im Verzeichnis auf der Festplatte gemacht werden. Diese werden nicht zwischengespeichert. Erst mit <strong id="t3" class="tooltip" title="git commit -m "Bla"">git commit</strong> speichert Änderungen inklusive einer Nachricht, die diese beschreiben sollte. Das allerdings ebenfalls nur lokal.</li>
+	<li>Mit <strong id="t4" class="tooltip" title="git push origin master">git push</strong> können die Änderungen nun vom lokalen ins entfernte Repositorium übertragen werden. Ein vorhergehendes Commit ist dabei obligatorisch.</li>
+	<li>Mit <strong id="t5" class="tooltip" title="git pull">git pull</strong> können aktuelle Änderungen nun auf die lokale Version übertragen werden.</li>
+	</ul>
+	
+			<table id="gittable">
+			<thead>
+				<tr>
+					<th>Befehl</th>
+					<th>Beispiel</th>
+					<th>Wirkung</th>
+				</tr>
+			</thead>
+		</table>
+		
+		<a href="https://github.com/ditzflor/EWP-HA-15"><img src="Octocat.jpg"/></a> 
+	
 <!-- TODO: Erstellen Sie hier die nötigen Inhalte -->
 
+		<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+		<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
+		<script src="my.js"></script>
 </body>
 </html>
